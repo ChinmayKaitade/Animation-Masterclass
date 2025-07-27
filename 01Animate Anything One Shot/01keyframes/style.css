@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  background-color: #1b1b1b;
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+}
+
+#box {
+  margin-top: 40px;
+  margin-left: 40px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: crimson;
+  position: absolute;
+
+  animation-name: anime;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) */
+}
+
+@keyframes anime {
+  /* From - To ✅ */
+  /* from {
+    left: 0;
+    rotate: 0;
+    background-color: crimson;
+  }
+  to {
+    left: 80%;
+    rotate: 360deg;
+    background-color: royalblue;
+  } */
+
+  /* Percentage Wise ✅ */
+  0% {
+    left: 0%;
+    top: 0%;
+    background-color: crimson;
+  }
+  50% {
+    left: 80%;
+    top: 0%;
+    background-color: royalblue;
+  }
+  75% {
+    left: 80%;
+    top: 40%;
+    background-color: deepskyblue;
+  }
+  100% {
+    top: 40%;
+    left: 0%;
+    background-color: yellow;
+  }
+}
